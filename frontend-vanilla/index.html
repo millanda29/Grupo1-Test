@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Ciudades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CRUD de Ciudades</h1>
+
+    <!-- Formulario para crear/actualizar ciudades -->
+    <form id="city-form">
+        <input type="hidden" id="city-id">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Nombre de la ciudad" required>
+
+        <label for="pais">País:</label>
+        <input type="text" id="pais" placeholder="País" required>
+
+        <label for="poblacion">Población:</label>
+        <input type="number" id="poblacion" placeholder="Población" required>
+
+        <label for="url_imagen">URL de Imagen:</label>
+        <input type="text" id="url_imagen" placeholder="URL de la imagen" required>
+
+        <button type="submit">Guardar Ciudad</button>
+    </form>
+
+    <!-- Tabla para mostrar las ciudades -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>País</th>
+                <th>Población</th>
+                <th>Imagen</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="city-table-body"></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
