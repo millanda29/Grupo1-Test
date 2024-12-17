@@ -1,4 +1,4 @@
-const API_URL = "http://3.83.51.155:8000/api/ciudades";
+const API_URL = "http://3.83.51.155:80/api/ciudades";
 const cityForm = document.getElementById("city-form");
 const cityTableBody = document.getElementById("city-table-body");
 
